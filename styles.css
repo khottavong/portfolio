@@ -76,6 +76,7 @@ header span {
   width: 300px;
   height: auto;
   margin-bottom: -35px;
+  margin-top: 200px;
   /* object-position: center;
   object-fit: cover;
   border-radius: 50%; */
@@ -117,22 +118,36 @@ header span {
 
 .projectsflex {
   display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: rgba(234, 146, 21, 1);
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  margin: 0 auto;
 }
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  border: 1px solid red;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  /* grid-template-rows: 1fr 1fr; */
+  /* grid-template-columns: repeat(2, 1fr); */
   width: 100%;
   margin: 0 auto;
-  grid-gap: 2px;
+  grid-gap: 10px;
+  /* justify-items: center; */
+  align-items: center;
+  justify-items: center;
 }
 
 .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: gray;
-  height: 300px;
+  height: 500px;
+  width: 100%;
+  align-self: center;
 }
 
 footer {
