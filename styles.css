@@ -1,7 +1,7 @@
 body {
   display: grid;
-  grid-template: repeat(4, 70vh)/repeat(1, 100vw);
-  grid-gap: 5px;
+  /* grid-template: repeat(4, 70vh)/repeat(1, 100vw);
+  grid-gap: 5px; */
   margin: 0 auto;
   padding: 0;
   /* background-color: #f7f7f7; */
@@ -42,15 +42,16 @@ nav a:hover {
 /* Header */
 
 header {
-  grid-area: 1/1/2/2;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   text-align: center;
+  overflow: hidden;
+  margin-top: 50px;
 }
 
-.bg {
+/* .bg {
   height: 500px;
   position: absolute;
   width: 80%;
@@ -59,7 +60,7 @@ header {
   z-index: -1;
   border: 1px solid red;
   top: -100px;
-}
+} */
 
 header h1 {
   text-transform: uppercase;
@@ -72,9 +73,9 @@ header span {
 }
 
 .pic {
-  width: 500px;
+  width: 300px;
   height: auto;
-  margin-bottom: -65px;
+  margin-bottom: -35px;
   /* object-position: center;
   object-fit: cover;
   border-radius: 50%; */
@@ -87,7 +88,6 @@ header span {
 /* content */
 
 .about {
-  grid-area: 2/1/3/2;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -95,55 +95,44 @@ header span {
   justify-content: flex-start;
   align-items: center;
   background-color: #3A4750;
+  text-align: center;
   /* border: 1px solid yellow; */
 }
 
 .about h1 {
   margin-top: 100px;
+  margin-bottom: 0;
 }
 
 .about p {
-  width: 350px;
   line-height: 150%;
   letter-spacing: 1px;
   word-spacing: 2px;
-  margin: 0 auto;
+  margin: 50px auto 100px;
+  padding: 5vw;
   color: #f7f7f7;
   font-size: 18px;
   font-weight: lighter;
 }
 
-/* .aboutbox {
-  grid-area: 1/2/5/4;
+.projectsflex {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(50, 50, 50, .8);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  -webkit-clip-path: polygon(0 0%, 100% 2%, 100% 98%, 0 100%);
-  clip-path: polygon(0 0, 100% 2%, 100% 98%, 0 100%);
-  border-radius: 4px;
-} */
-
-.bg-box3 {
-  background: url('../background1.jpg') no-repeat center center fixed;
-  background-size: cover;
-  z-index: -1;
-  -webkit-clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 97%);
-  clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 97%);
-  border-radius: 4px;
+  width: 100%;
+  background-color: rgba(234, 146, 21, 1);
 }
 
 .projects {
-  grid-area: 3/1/4/2;
-  /* display: flex;
-  justify-content: center;
-  height: 100vh;
-  /* width: 100%; */
-  background-color: rgba(234, 146, 21, 1);
-  /* -webkit-clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 97%);
-  clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 97%);*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  border: 1px solid red;
+  width: 100%;
+  margin: 0 auto;
+  grid-gap: 2px;
+}
+
+.item {
+  background-color: gray;
+  height: 300px;
 }
 
 footer {
