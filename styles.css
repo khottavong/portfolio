@@ -190,6 +190,7 @@ footer {
 
 footer h1 {
   margin: 75px 50px auto;
+  color: #f7f7f7;
 }
 
 form {
@@ -240,6 +241,7 @@ textarea {
   letter-spacing: 3px;
   height: 50px;
   width: 100px;
+  color: #f7f7f7;
 }
 
 #contactsubmit:hover {
