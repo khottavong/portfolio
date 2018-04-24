@@ -173,7 +173,11 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  text-align: center;
+}
+
+footer h1 {
+  margin: 75px 50px auto;
 }
 
 form {
@@ -182,6 +186,7 @@ form {
   align-items: center;
   justify-content: center;
   padding: 15px auto;
+  margin: 75px auto;
 }
 
 input[type="text"] {
