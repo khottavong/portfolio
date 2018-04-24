@@ -62,14 +62,28 @@ header {
   top: -100px;
 } */
 
-header h1 {
+.name {
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 40px;
+  line-height: 80%;
+  text-align: left;
+  letter-spacing: 10px !important;
 }
 
-header span {
-  font-weight: bold;
+.title {
+  text-transform: uppercase;
+  font-size: 40px;
+  /* font-weight: bold; */
+  /* color: #EA9215; */
+  text-align: right;
+  letter-spacing: 15px;
+}
+
+.dev {
   color: #EA9215;
+  font-weight: normal;
+  font-size: 70px;
+  letter-spacing: 5px;
 }
 
 .pic {
@@ -234,3 +248,12 @@ textarea {
   border: 2px solid #FF6D24;
   font-size: 17px;
 }
+
+@media screen and (max-width: 768px) {
+  nav a {
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 5px 5px;
+    margin: 10px 25px;
+  }
