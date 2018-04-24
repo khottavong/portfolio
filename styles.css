@@ -10,7 +10,7 @@ body {
 }
 
 h1, h2 {
-  letter-spacing: 5px;
+  letter-spacing: 1px;
   font-weight: lighter;
 }
 
@@ -63,6 +63,7 @@ header {
 } */
 
 .name {
+  color: #3A4750;
   text-transform: uppercase;
   font-size: 40px;
   line-height: 80%;
@@ -161,6 +162,7 @@ header {
   height: 400px;
   width: 100%;
   align-self: center;
+  border-radius: 3px;
 }
 
 .one {
@@ -206,7 +208,7 @@ form {
 }
 
 input[type="text"] {
-  width: 200px;
+  width: 300px;
   height: 50px;
   border: 1px solid #FF6D24;
   border-radius: 5px;
@@ -216,7 +218,7 @@ input[type="text"] {
 }
 
 input[type="email"] {
-  width: 200px;
+  width: 300px;
   height: 50px;
   border: 1px solid #FF6D24;
   border-radius: 5px;
@@ -237,9 +239,10 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: transparent;
-  border: 1px solid #FF6D24;
-  border-radius: 25px;
+  background-color: background: rgb(234, 114, 21);
+  background: linear-gradient(79deg, rgba(234, 114, 21, 1) 0%, rgba(234, 171, 21, 1) 100%);
+  border: 1px solid transparent;
+  border-radius: 3px;
   font-size: 16px;
   letter-spacing: 3px;
   height: 50px;
@@ -248,8 +251,8 @@ textarea {
 }
 
 #contactsubmit:hover {
-  border: 2px solid #FF6D24;
-  font-size: 17px;
+  /* border: 2px solid #FF6D24; */
+  font-size: 15px;
 }
 
 @media screen and (max-width: 768px) {
