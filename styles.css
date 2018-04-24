@@ -76,7 +76,6 @@ header span {
   width: 300px;
   height: auto;
   margin-bottom: -35px;
-  margin-top: 200px;
   /* object-position: center;
   object-fit: cover;
   border-radius: 50%; */
@@ -103,6 +102,7 @@ header span {
 .about h1 {
   margin-top: 100px;
   margin-bottom: 0;
+  color: #f7f7f7;
 }
 
 .about p {
@@ -123,7 +123,6 @@ header span {
   background-color: rgba(234, 146, 21, 1);
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
   margin: 0 auto;
 }
 
@@ -132,8 +131,8 @@ header span {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   /* grid-template-rows: 1fr 1fr; */
   /* grid-template-columns: repeat(2, 1fr); */
-  width: 100%;
-  margin: 0 auto;
+  width: 98%;
+  margin: 0 auto 10px;
   grid-gap: 10px;
   /* justify-items: center; */
   align-items: center;
@@ -145,14 +144,88 @@ header span {
   justify-content: center;
   align-items: center;
   background-color: gray;
-  height: 500px;
+  height: 400px;
   width: 100%;
   align-self: center;
+}
+
+.one {
+  background: url('https://photos.smugmug.com/Shop/Adventure/i-ZWkfc4h/0/6d9688f2/L/1618_BURKARD_017085-L.jpg') no-repeat center;
+  background-size: auto;
+}
+
+.one a {
+  text-decoration: none;
+  color: #f7f7f7;
+  letter-spacing: 3px;
+  font-size: 22px;
+  line-height: 80%;
+  text-align: center;
+}
+
+.one a:hover {
+  color: #EA9215;
 }
 
 footer {
   background-color: #3A4750;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 500px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px auto;
+}
+
+input[type="text"] {
+  width: 150px;
+  height: 25px;
+  border: 1px solid #FF6D24;
+  border-radius: 5px;
+  margin: 2px auto;
+  letter-spacing: 1px;
+  /* text-align: center; */
+}
+
+input[type="email"] {
+  width: 150px;
+  height: 25px;
+  border: 1px solid #FF6D24;
+  border-radius: 5px;
+  margin: 2px auto;
+  letter-spacing: 1px;
+  /* text-align: center; */
+}
+
+textarea {
+  border: 1px solid #FF6D24;
+  border-radius: 5px;
+  margin: 15px auto;
+  width: 300px;
+  height: 150px;
+}
+
+#contactsubmit {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #FF6D24;
+  border-radius: 25px;
+  font-size: 16px;
+  letter-spacing: 3px;
+  height: 50px;
+  width: 100px;
+}
+
+#contactsubmit:hover {
+  border: 2px solid #FF6D24;
+  font-size: 17px;
 }
