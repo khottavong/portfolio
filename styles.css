@@ -67,7 +67,7 @@ header {
   font-size: 40px;
   line-height: 80%;
   text-align: left;
-  letter-spacing: 10px !important;
+  /* letter-spacing: 10px !important; */
 }
 
 .title {
@@ -81,7 +81,7 @@ header {
 .dev {
   color: #EA9215;
   font-weight: normal;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .pic {
