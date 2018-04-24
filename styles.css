@@ -76,14 +76,12 @@ header {
   /* font-weight: bold; */
   /* color: #EA9215; */
   text-align: right;
-  letter-spacing: 15px;
 }
 
 .dev {
   color: #EA9215;
   font-weight: normal;
-  font-size: 70px;
-  letter-spacing: 5px;
+  font-size: 60px;
 }
 
 .pic {
