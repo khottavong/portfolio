@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Khottavong | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
 
 </head>
@@ -19,7 +19,6 @@
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#footer">Contact</a>
-    <!-- <i class='fa fa-linkedin'></i> -->
   </nav>
 
 
@@ -31,7 +30,10 @@
     <h1 class='title'> <br><span class='dev'>web developer</span></h1>
     <img class='pic' src="Image 5.png" alt="">
 
+    <div class='bg'></div>
+    </div>
   </header>
+
 
 
 
@@ -47,15 +49,40 @@
 
   <div id='projects' class='projectsflex'>
     <h1>My Projects</h1>
+
     <div class='projects'>
 
       <div class='item one'>
         <a href="">Choose Your <br> Own Adventure</a>
       </div>
-      <div class='item'>
+
+
+
+      <div class='item pam'>
+
+        <!-- <h2>Pick A Color</h2>
+        <input type="color" id="colorPicker"> -->
+        <table id="pixelCanvas"></table>
       </div>
-      <div class='item'>
+
+
+
+
+
+      <div class='item rps'>
+        <h3>RPS</h3>
+        <i id='pcPlayer' class="far fa-hand-rock"></i>
+        <div class='rpsIcons'>
+
+
+          <i id='rock' class="far fa-hand-rock"></i>
+          <i id='paper' class="far fa-hand-paper"></i>
+          <i id='scissors' class="far fa-hand-scissors"></i>
+
+        </div>
+
       </div>
+
       <div class='item'>
       </div>
     </div>
@@ -81,7 +108,7 @@
   </footer>
 
   <script src='script.js'></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 </body>
 
