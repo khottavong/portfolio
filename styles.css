@@ -26,11 +26,12 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #323643;
+  color: #323232;
   padding: 10px 5px;
   letter-spacing: 3px;
-  margin: 10px 100px;
+  margin: 10px 75px;
   border: 1px solid transparent;
+  font-weight: lighter;
 }
 
 nav a:hover {
@@ -54,15 +55,13 @@ header {
 .bg {
   position: absolute;
   z-index: -1;
-  top: 0;
-  width: 300px;
+  top: 50px;
+  width: 400px;
   height: 300px;
-  background: url('bg5.jpg') no-repeat center;
+  margin: 0px auto;
+  background: url('bg5.jpg') no-repeat bottom;
   background-size: cover;
   border-radius: 5px;
-  -webkit-box-shadow: 66px 77px 40px -39px rgba(0, 0, 0, 0.17);
-  -moz-box-shadow: 66px 77px 40px -39px rgba(0, 0, 0, 0.17);
-  box-shadow: 66px 77px 40px -39px rgba(0, 0, 0, 0.17);
 }
 
 .name {
@@ -71,7 +70,7 @@ header {
   font-size: 40px;
   line-height: 80%;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 25px auto 0;
   /* letter-spacing: 10px !important; */
 }
 
@@ -81,13 +80,12 @@ header {
   /* font-weight: bold; */
   /* color: #EA9215; */
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin-top: 75px;
 }
 
 .dev {
   color: #EA9215;
-  font-weight: normal;
+  font-weight: lighter;
   font-size: 28px;
 }
 
@@ -95,6 +93,7 @@ header {
   width: 300px;
   height: auto;
   margin-bottom: -35px;
+  margin-top: 250px;
 }
 
 /* content */
@@ -106,7 +105,7 @@ header {
   width: 100%;
   justify-content: flex-start;
   align-items: center;
-  background-color: #3A4750;
+  background-color: #323232;
   text-align: center;
   /* border: 1px solid yellow; */
 }
@@ -213,7 +212,7 @@ header {
 }
 
 footer {
-  background-color: #3A4750;
+  background-color: #323232;
   display: flex;
   flex-direction: column;
   justify-content: center;
