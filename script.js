@@ -1,12 +1,22 @@
-const rock = document.getElementById('#rock');
-const paper = document.getElementById('#paper');
-const scissors = document.querySelector('#scissors');
-const icon = document.querySelectorAll('i');
-const pcPlayer = document.querySelector('#pcPlayer');
+const contactbtn = document.querySelector('#contactbtn');
+const form = document.querySelector('#form')
 
-icon.addEventListener("click", function() {
-  pcPlayer.classList.toggle('pcPlayerAnimate')
+
+
+
+
+contactbtn.addEventListener("click", function() {
+  contactbtn.style.display = 'none';
+  form.classList.toggle('hide');
 });
+
+
+
+
+
+
+
+
 
 // scissors.addEventListener("click", function() {
 //   pcPlayer.style.animation = '';
