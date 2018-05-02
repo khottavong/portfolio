@@ -7,7 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Khottavong | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link href="css/fontawesome-all.css" rel="stylesheet">
+
 
 
 </head>
@@ -24,14 +25,14 @@
 
 
   <header>
-
-    <!-- <div class='bg'></div> -->
-
+    <h1 class='initials'>SK</h1>
+    <div class='initialsbox'>
+    </div>
     <img class='pic' src="Image 5.png" alt="">
 
-    <div class='bg'>
-      <h1 class='name'>Sean <br> Khottavong</h1>
-      <h1 class='title'> <br><span class='dev'>web developer</span></h1></div>
+    <!--
+    <h1 class='name'>Sean <br> Khottavong</h1>
+    <h1 class='title'> <br><span class='dev'>web developer</span></h1> -->
   </header>
 
 
@@ -41,71 +42,57 @@
 
   <div id='about' class='about'>
     <h1>About Me</h1>
-    <p>I'm an aspiring web-developer in the Chattanooga area. I'm a lover of music, art, and the outdoors and I like to employ elements and concepts of these interests into my work. Currently, I work as a refrigeration technician at a local, well-known company,
-      but I spend my free time learning more about web development, 3D printing, producing music, hiking, and whitewater kayaking. I have the heart of a creator and the mind of a technician.</p>
+    <p>Hi, I'm Sean, an aspiring web-developer in the Chattanooga area. I'm a lover of music, art, and the outdoors and I like to employ elements and concepts of these interests into my work. Currently, I work as a refrigeration technician at a local, well-known
+      company, but I spend my free time learning more about web development, 3D printing, producing music, hiking, and whitewater kayaking. I have the heart of a creator and the mind of a technician.</p>
     <div class='bg-box3'></div>
   </div>
 
 
   <div id='projects' class='projectsflex'>
-    <h1>My Projects</h1>
+    <div class='item one'>
+      <a href="">Choose Your <br> Own Adventure</a>
+    </div>
 
-    <div class='projects'>
+    <div class='item'>
+    </div>
 
-      <div class='item one'>
-        <a href="">Choose Your <br> Own Adventure</a>
-      </div>
+    <div class='item'>
+    </div>
 
+    <div class='item'>
+      <a href="">My Blog</a>
 
-
-      <div class='item pam'>
-
-        <!-- <h2>Pick A Color</h2>
-        <input type="color" id="colorPicker"> -->
-        <table id="pixelCanvas"></table>
-      </div>
-
-
-
-
-
-      <div class='item rps'>
-        <h3>RPS</h3>
-        <i id='pcPlayer' class="far fa-hand-rock"></i>
-        <div class='rpsIcons'>
-
-
-          <i id='rock' class="far fa-hand-rock"></i>
-          <i id='paper' class="far fa-hand-paper"></i>
-          <i id='scissors' class="far fa-hand-scissors"></i>
-
-        </div>
-
-      </div>
-
-      <div class='item'>
-      </div>
     </div>
   </div>
 
 
 
   <footer id='footer'>
-    <h1>If you like what you see, let's get in touch.</h1>
-    <div class='form'>
-      <form action="https://formspree.io/sean.khottavong@gmail.com" method="POST">
-        <input type="text" name="firstname" placeholder="First Name" size="10" autofocus required>
-        <input type="text" name="lastname" placeholder="Last Name" size="10" required>
-        <input type="email" name="userEmail" placeholder="Email" required>
-        <textarea name="user_message"></textarea>
-        <input id='contactsubmit' type="submit">
-      </form>
+    <div class='contactsection'>
+      <h1>If you like what you see, <br> let's get in touch.</h1>
+      <a class='messageme' href="">Message Me</a>
+      <!-- <div class='form'>
+        <form action="https://formspree.io/sean.khottavong@gmail.com" method="POST">
+          <input type="text" name="firstname" placeholder="First Name" size="10" autofocus required>
+          <input type="text" name="lastname" placeholder="Last Name" size="10" required>
+          <input type="email" name="userEmail" placeholder="Email" required>
+          <textarea name="user_message"></textarea>
+          <input id='contactsubmit' type="submit">
+        </form>
+      </div> -->
     </div>
 
 
+    <div class='social'>
+      <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href=""><i class="fab fa-soundcloud fa-2x"></i></a>
+      <a href=""><i class="fab fa-github-square fa-2x"></i></a>
+      <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+    </div>
 
 
   </footer>
+
 
   <script src='script.js'></script>
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

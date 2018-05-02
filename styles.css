@@ -37,35 +37,40 @@ nav a {
 nav a:hover {
   color: #EA9215;
   border: 1px solid #EA9215;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 /* Header */
 
 header {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   text-align: center;
-  overflow: hidden;
   margin-top: 50px;
+  overflow: hidden;
 }
 
-.bg {
+.initials {
   position: absolute;
-  z-index: -1;
-  top: 50px;
-  width: 400px;
-  height: 300px;
-  margin: 0px auto;
-  background: url('bg5.jpg') no-repeat bottom;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 700px;
+  font-weight: bold;
+  margin: 0 auto;
+  letter-spacing: 100px;
+  background: linear-gradient(to top, #eee, rgba(234, 146, 21, 0.0)), url('background3.jpg') no-repeat top fixed;
   background-size: cover;
-  border-radius: 5px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  z-index: -1;
 }
 
 .name {
-  color: #3A4750;
+  color: #323232;
   text-transform: uppercase;
   font-size: 40px;
   line-height: 80%;
@@ -94,6 +99,7 @@ header {
   height: auto;
   margin-bottom: -35px;
   margin-top: 250px;
+  z-index: 2;
 }
 
 /* content */
@@ -105,7 +111,7 @@ header {
   width: 100%;
   justify-content: flex-start;
   align-items: center;
-  background-color: #323232;
+  background-color: #212623;
   text-align: center;
   /* border: 1px solid yellow; */
 }
@@ -113,43 +119,33 @@ header {
 .about h1 {
   margin-top: 100px;
   margin-bottom: 0;
-  color: #f7f7f7;
+  color: lightgray;
 }
 
 .about p {
   line-height: 150%;
-  letter-spacing: 1px;
-  word-spacing: 2px;
+  letter-spacing: 0px;
+  word-spacing: 1px;
   margin: 50px auto 100px;
-  padding: 5vw;
-  color: #f7f7f7;
+  padding: 0 15vw;
+  color: lightgray;
   font-size: 18px;
   font-weight: lighter;
 }
 
 .projectsflex {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background: rgb(234, 114, 21);
-  background: linear-gradient(79deg, rgba(234, 114, 21, 1) 0%, rgba(234, 171, 21, 1) 100%);
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  /* border: 1px solid red; */
 }
 
-.projects {
+/* .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  /* grid-template-rows: 1fr 1fr; */
-  /* grid-template-columns: repeat(2, 1fr); */
-  width: 98%;
-  margin: 0 auto 10px;
-  grid-gap: 10px;
-  /* justify-items: center; */
+  grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  width: 100%;
   align-items: center;
   justify-items: center;
-}
+} */
 
 .item {
   display: flex;
@@ -157,15 +153,14 @@ header {
   justify-content: center;
   align-items: center;
   background-color: gray;
-  height: 400px;
+  height: 500px;
   width: 100%;
-  align-self: center;
-  border-radius: 3px;
+  /* border: 1px solid red; */
 }
 
 .one {
   background: url('https://photos.smugmug.com/Shop/Adventure/i-ZWkfc4h/0/6d9688f2/L/1618_BURKARD_017085-L.jpg') no-repeat center;
-  background-size: auto;
+  background-size: cover;
 }
 
 .one a {
@@ -182,47 +177,38 @@ header {
   color: #EA9215;
 }
 
-.rps h3 {
-  color: #f7f7f7;
-  font-weight: lighter;
-}
-
-.rpsIcons {
-  margin: 50px auto;
-}
-
-.far {
-  margin: 0 20px;
-  color: black;
-  font-size: 40px;
-  transform: rotate(90deg);
-}
-
-@keyframes rockDown {
-  from {
-    transform: rotate(75deg);
-  }
-  to {
-    transform: translateY(25px) rotate(95deg);
-  }
-}
-
-.pcPlayerAnimate {
-  animation: rockDown .45s 3 forwards ease-in;
-}
-
 footer {
-  background-color: #323232;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100%;
 }
 
 footer h1 {
-  margin: 75px 50px auto;
+  margin: 75px 50px 0;
   color: #f7f7f7;
+}
+
+.messageme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #63A6B8;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #63A6B8;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  margin-top: 175px;
+}
+
+.messageme:hover {
+  background-color: lightgray;
 }
 
 form {
@@ -230,14 +216,17 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 15px auto;
+  padding: 30px 30px;
   margin: 75px auto;
+  background-color: rgba(200, 200, 200, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
 }
 
 input[type="text"] {
   width: 300px;
   height: 50px;
-  border: 1px solid #FF6D24;
+  border: none;
   border-radius: 5px;
   margin: 5px auto;
   letter-spacing: 1px;
@@ -247,7 +236,7 @@ input[type="text"] {
 input[type="email"] {
   width: 300px;
   height: 50px;
-  border: 1px solid #FF6D24;
+  border: none;
   border-radius: 5px;
   margin: 5px auto;
   letter-spacing: 1px;
@@ -255,11 +244,11 @@ input[type="email"] {
 }
 
 textarea {
-  border: 1px solid #FF6D24;
   border-radius: 5px;
   margin: 15px auto;
   width: 300px;
   height: 150px;
+  border: none;
 }
 
 #contactsubmit {
@@ -268,7 +257,7 @@ textarea {
   appearance: none;
   background-color: background: rgb(234, 114, 21);
   background: linear-gradient(79deg, rgba(234, 114, 21, 1) 0%, rgba(234, 171, 21, 1) 100%);
-  border: 1px solid transparent;
+  border: none;
   border-radius: 3px;
   font-size: 16px;
   letter-spacing: 3px;
@@ -281,6 +270,33 @@ textarea {
   font-size: 15px;
 }
 
+.contactsection {
+  background: url('bg5.jpg') no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 800px;
+  width: 100%;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #494541;
+}
+
+i {
+  color: lightgray;
+  margin: 0;
+  padding: 0 25px;
+}
+
 @media screen and (max-width: 768px) {
   nav a {
     font-size: 15px;
@@ -289,3 +305,8 @@ textarea {
     padding: 5px 5px;
     margin: 10px 18px;
   }
+  .projectsflex {
+    display: grid;
+    grid-template: repeat(4, 1fr)/ 1fr;
+  }
+}
