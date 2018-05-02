@@ -8,6 +8,7 @@ const form = document.querySelector('#form')
 contactbtn.addEventListener("click", function() {
   contactbtn.style.display = 'none';
   form.classList.toggle('hide');
+  form.classList.toggle('heighttransition');
 });
 
 

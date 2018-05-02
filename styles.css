@@ -148,7 +148,7 @@ header {
   background-color: gray;
   height: 500px;
   width: 100%;
-  /* border: 1px solid red; */
+  border: 1px solid #323232;
 }
 
 .one {
