@@ -35,8 +35,8 @@ nav a {
 }
 
 nav a:hover {
-  color: #EA9215;
-  border: 1px solid #EA9215;
+  color: #63A6B8;
+  border: 1px solid #63A6B8;
   border-radius: 10px;
 }
 
@@ -90,9 +90,9 @@ header {
 }
 
 .dev {
-  color: #EA9215;
-  font-weight: lighter;
-  font-size: 28px;
+  color: #63A6B8;
+  font-weight: normal;
+  font-size: 30px;
 }
 
 .pic {
@@ -252,8 +252,7 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: background: rgb(234, 114, 21);
-  background: linear-gradient(79deg, rgba(234, 114, 21, 1) 0%, rgba(234, 171, 21, 1) 100%);
+  background-color: #63A6B8;
   border: none;
   border-radius: 3px;
   font-size: 16px;
