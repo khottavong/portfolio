@@ -56,20 +56,19 @@ header {
   font-size: 40px;
   line-height: 80%;
   text-align: center;
-  margin: 25px auto 0;
+  margin: 6vh auto 0;
 }
 
 .title {
   text-transform: uppercase;
-  font-size: 30px;
   text-align: center;
-  margin-top: 25px;
+  margin-top: -20px;
 }
 
 .dev {
   color: #D72323;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .pic {
