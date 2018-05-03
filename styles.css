@@ -165,7 +165,7 @@ footer h1 {
   width: 200px;
   height: 50px;
   border: 2px solid #D72323;
-  border-radius: 5px;
+  border-radius: 10px;
   text-decoration: none;
   color: #D72323;
   font-size: 20px;
@@ -187,7 +187,7 @@ form {
   margin: 75px auto;
   background-color: rgba(100, 100, 100, 0.5);
   backdrop-filter: blur(10px);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .hide {
@@ -198,7 +198,7 @@ input[type="text"] {
   width: 300px;
   height: 50px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 5px auto;
   letter-spacing: 1px;
   /* text-align: center; */
@@ -208,14 +208,14 @@ input[type="email"] {
   width: 300px;
   height: 50px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 5px auto;
   letter-spacing: 1px;
   /* text-align: center; */
 }
 
 textarea {
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 15px auto;
   width: 300px;
   height: 150px;
@@ -229,7 +229,7 @@ textarea {
   width: 200px;
   height: 50px;
   border: 2px solid #D72323;
-  border-radius: 5px;
+  border-radius: 10px;
   text-decoration: none;
   color: #D72323;
   font-size: 20px;
