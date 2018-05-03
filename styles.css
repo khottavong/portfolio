@@ -4,7 +4,7 @@ body {
   grid-gap: 5px; */
   margin: 0 auto;
   padding: 0;
-  background-color: #f7f7f7;
+  background-color: #eeeeee;
   /* background-color: #CAC8C9; */
   font-family: helvetica;
 }
@@ -20,7 +20,7 @@ nav {
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: #f7f7f7;
+  background-color: #eeeeee;
   z-index: 100;
 }
 
@@ -35,8 +35,8 @@ nav a {
 }
 
 nav a:hover {
-  color: #63A6B8;
-  border: 1px solid #63A6B8;
+  color: #D72323;
+  border: 1px solid #D72323;
   border-radius: 10px;
 }
 
@@ -90,7 +90,7 @@ header {
 }
 
 .dev {
-  color: #63A6B8;
+  color: #D72323;
   font-weight: normal;
   font-size: 30px;
 }
@@ -120,7 +120,7 @@ header {
 .about h1 {
   margin-top: 100px;
   margin-bottom: 0;
-  color: lightgray;
+  color: #eeeeee;
 }
 
 .about p {
@@ -129,7 +129,7 @@ header {
   word-spacing: 1px;
   margin: 50px auto 100px;
   padding: 0 15vw;
-  color: lightgray;
+  color: #eeeeee;
   font-size: 18px;
   font-weight: lighter;
 }
@@ -157,7 +157,7 @@ header {
 
 .one a {
   text-decoration: none;
-  color: #f7f7f7;
+  color: #eeeeee;
   letter-spacing: 3px;
   font-size: 22px;
   line-height: 80%;
@@ -166,7 +166,7 @@ header {
 }
 
 .one a:hover {
-  color: #EA9215;
+  color: #D72323;
 }
 
 footer {
@@ -180,7 +180,7 @@ footer {
 
 footer h1 {
   margin: 75px 50px 0;
-  color: #f7f7f7;
+  color: #eeeeee;
 }
 
 .messageme {
@@ -189,18 +189,18 @@ footer h1 {
   align-items: center;
   width: 200px;
   height: 50px;
-  border: 1px solid #63A6B8;
+  border: 2px solid #D72323;
   border-radius: 5px;
   text-decoration: none;
-  color: #63A6B8;
+  color: #D72323;
   font-size: 20px;
-  font-weight: lighter;
+  font-weight: normal;
   letter-spacing: 3px;
   margin-top: 175px;
 }
 
 .messageme:hover {
-  background-color: lightgray;
+  background-color: #eeeeee;
 }
 
 form {
@@ -258,7 +258,7 @@ textarea {
   letter-spacing: 3px;
   height: 50px;
   width: 100px;
-  color: #f7f7f7;
+  color: #eeeeee;
 }
 
 #contactsubmit:hover {
@@ -287,7 +287,7 @@ textarea {
 }
 
 i {
-  color: lightgray;
+  color: #eeeeee;
   margin: 0;
   padding: 0 25px;
 }
