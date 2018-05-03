@@ -50,22 +50,6 @@ header {
   overflow: hidden;
 }
 
-.initials {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  font-size: 700px;
-  font-weight: bold;
-  margin: 0 auto;
-  letter-spacing: 100px;
-  background: linear-gradient(to top, #eee, rgba(234, 146, 21, 0.0)), url('background3.jpg') no-repeat top fixed;
-  background-size: cover;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  z-index: -1;
-}
-
 .name {
   color: #323232;
   text-transform: uppercase;
@@ -73,15 +57,11 @@ header {
   line-height: 80%;
   text-align: center;
   margin: 25px auto 0;
-  /* letter-spacing: 10px !important; */
-  /* border: 1px solid red; */
 }
 
 .title {
   text-transform: uppercase;
   font-size: 30px;
-  /* font-weight: bold; */
-  /* color: #EA9215; */
   text-align: center;
   margin-top: 25px;
 }
@@ -96,7 +76,6 @@ header {
   width: 300px;
   height: auto;
   margin-bottom: -35px;
-  /* margin-top: 250px; */
   z-index: 2;
 }
 
@@ -111,7 +90,6 @@ header {
   align-items: center;
   background-color: #212623;
   text-align: center;
-  /* border: 1px solid yellow; */
 }
 
 .about h1 {
@@ -207,7 +185,7 @@ form {
   justify-content: center;
   padding: 30px 30px;
   margin: 75px auto;
-  background-color: rgba(200, 200, 200, 0.5);
+  background-color: rgba(100, 100, 100, 0.5);
   backdrop-filter: blur(10px);
   border-radius: 5px;
 }
