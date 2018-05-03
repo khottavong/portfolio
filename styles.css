@@ -186,6 +186,7 @@ form {
   margin: 75px auto;
   background-color: rgba(100, 100, 100, 0.5);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
 }
 
