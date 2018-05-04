@@ -212,6 +212,7 @@ form {
 .form-input {
   display: flex;
   justify-content: space-between;
+  -webkit-justify-content: space-between;
   align-items: center;
   /* border: 1px solid red; */
   width: 100%;
@@ -254,6 +255,7 @@ form {
   font-weight: normal;
   letter-spacing: 3px;
   background-color: transparent;
+  text-align: center;
 }
 
 #contactsubmit:hover {
