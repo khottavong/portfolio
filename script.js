@@ -5,16 +5,24 @@ const form = document.querySelector('#form')
 
 
 
-contactbtn.addEventListener("click", function() {
-  contactbtn.style.display = 'none';
-  form.classList.toggle('hide');
-  form.classList.toggle('heighttransition');
-});
+// contactbtn.addEventListener("click", function() {
+//   contactbtn.style.display = 'none';
+//   form.classList.toggle('hide');
+//   form.classList.toggle('heighttransition');
+// });
 
 
+function appendStrings() {
+  let outputHtml = '<ul>'
+  let contactArray = ['Sean Khottavong', '423-488-****', 'call me', 'mail me'];
+  for (let i = 0; i < contactArray.length; i++) {
+    outputHtml += '<li>' + contactArray[i] + '</li>'
+  }
+  outputHtml += '</ul>'
+  $('#contact-info').html(outputHtml);
+}
 
-
-
+appendStrings();
 
 
 
