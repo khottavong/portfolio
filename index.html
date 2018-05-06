@@ -29,22 +29,12 @@
     <div class='red-box'></div>
     <h1 class='name'>Sean <br> Khottavong</h1>
     <h1 class='title'> <br><span class='dev'>web developer</span></h1>
-
     <img class='pic' src="Image 5.png" alt="">
-
-
-
   </header>
 
 
 
-
-
-
   <section id='about'>
-
-
-
     <div class='about'>
       <h1>About</h1>
       <p>Hi, I'm Sean, an aspiring web-developer in the Chattanooga area. I'm a lover of music, art, and the outdoors and I like to employ elements and concepts of these interests into my work. Currently, I work as a refrigeration technician at a local,
@@ -80,24 +70,24 @@
 
 
 
-  <section class='contactsection'>
+  <section class='contact-section'>
     <div class='section-title'>
       <div class='filter'></div>
       <h1>Contact</h1>
     </div>
     <h1 id='contact'>If you like what you see, <br> let's get in touch.</h1>
 
-    <form action="https://formspree.io/sean.khottavong@gmail.com" method="POST">
-      <div class='form-input'>
-        <input type="text" name="name" placeholder="Name" size="10" autofocus required>
-        <input type="email" name="userEmail" placeholder="Email" required>
-      </div>
+    <div class='form-container'>
+      <form action="https://formspree.io/sean.khottavong@gmail.com" method="POST">
+        <div class='input'>
+          <input type="text" name="name" placeholder="Name" autofocus required>
+          <input type="email" name="userEmail" placeholder="Email" required>
+        </div>
 
-      <textarea class='form-text' name="user_message" placeholder="Message"></textarea>
-
-      <input id='contactsubmit' type="submit">
-    </form>
-
+        <textarea class='form-text' name="user_message" placeholder="Message"></textarea>
+        <input id='contactsubmit' type="submit">
+      </form>
+    </div>
   </section>
 
 
