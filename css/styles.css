@@ -1,7 +1,7 @@
 body {
   margin: 0 auto;
   padding: 0;
-  background-color: #eeeeee;
+  background-color: #eee;
   font-family: helvetica;
 }
 
@@ -16,7 +16,7 @@ nav {
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: #eeeeee;
+  background-color: #eee;
   z-index: 100;
 }
 
@@ -25,7 +25,7 @@ nav a {
   color: #181F22;
   padding: 15px 5px;
   letter-spacing: 3px;
-  margin: 0 7vw;
+  margin: 0 3vw;
   border: 2px solid transparent;
   font-weight: lighter;
 }
@@ -41,11 +41,13 @@ header {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   text-align: center;
   margin-top: 50px;
   overflow: hidden;
+  background-color: #eee;
+  height: 80vh;
 }
 
 .red-box {
@@ -57,12 +59,21 @@ header {
   right: 0;
   bottom: 0;
   margin: 0 auto;
-  background: url('kayakbg.jpg') center fixed;
+  background: url('../kayakbg.jpg') center fixed;
   background-size: cover;
   /* background: rgb(215, 35, 35);
   background: linear-gradient(150deg, rgba(215, 35, 35, 1) 0%, rgba(79, 5, 0, 1) 100%); */
   -webkit-clip-path: polygon(100% 39%, 0% 100%, 100% 100%);
   clip-path: polygon(100% 27%, 0% 100%, 100% 100%);
+}
+
+.name-box {
+  position: relative;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  border: 3px groove rgb(215, 35, 35);
+  box-shadow: 0px 2px 20px lightgray;
 }
 
 .name {
@@ -71,13 +82,13 @@ header {
   font-size: 40px;
   line-height: 80%;
   text-align: center;
-  margin: 6vh auto 0;
+  /* margin: 6vh auto 0; */
 }
 
 .title {
   text-transform: uppercase;
   text-align: center;
-  margin-top: -20px;
+  margin-top: -60px;
 }
 
 .dev {
@@ -87,9 +98,10 @@ header {
 }
 
 .pic {
+  position: absolute;
   width: 300px;
   height: auto;
-  margin-bottom: -35px;
+  bottom: -40px;
   z-index: 2;
 }
 
@@ -98,18 +110,18 @@ header {
 .about {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
+  max-width: 980px;
   justify-content: flex-start;
   align-items: center;
-  background-color: #181F22;
+  background-color: #eee;
   text-align: center;
+  margin: 0 auto;
 }
 
 .about h1 {
   margin-top: 50px;
   margin-bottom: 0;
-  color: #eeeeee;
+  color: #181F22;
 }
 
 .about p {
@@ -118,15 +130,75 @@ header {
   word-spacing: 1px;
   margin: 50px auto 100px;
   padding: 0 15vw;
-  color: #eeeeee;
+  color: #181F22;
   font-size: 18px;
   font-weight: lighter;
+}
+
+.specialty {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 980px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.specialty div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 0;
+  background: rgb(170, 48, 48);
+  background: linear-gradient(90deg, rgba(170, 48, 48, 1) 0%, rgba(196, 154, 31, 1) 26%, rgba(116, 153, 15, 1) 58%, rgba(39, 153, 0, 1) 100%);
+  /* background: rgb(215, 99, 90);
+  background: linear-gradient(150deg, rgba(215, 99, 90, 0.0578606442577031) 0%, rgba(207, 0, 0, 1) 100%); */
+  color: #eee;
+  margin-top: 0;
+  border-radius: 2px;
+  transition: width 1s ease-in;
+}
+
+.specialty h2 {
+  color: color: #181F22;
+}
+
+.specialty h4 {
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 27px;
+  letter-spacing: 10px;
+  font-size: 15px;
+  font-weight: lighter;
+  color: color: #181F22;
+  /* border: 1px solid red; */
+}
+
+.skill1 {
+  width: 90% !important;
+  transition: all 1s ease-in;
+}
+
+.skill2 {
+  width: 60% !important;
+  transition: all 1s ease-in;
+}
+
+.skill3 {
+  width: 50% !important;
+  transition: all 1s ease-in;
+}
+
+.projects-section {
+  position: relative;
 }
 
 .projectsflex {
   display: grid;
   grid-template: repeat(2, 1fr)/repeat(2, 1fr);
-  grid-gap: 3px;
+  grid-gap: 25px;
+  margin: 25px;
 }
 
 .item {
@@ -134,9 +206,9 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: gray;
   height: 500px;
   width: 100%;
+  border-radius: 2px;
 }
 
 .one {
@@ -146,7 +218,7 @@ header {
 
 .one a {
   text-decoration: none;
-  color: #eeeeee;
+  color: #eee;
   letter-spacing: 3px;
   font-size: 22px;
   line-height: 80%;
@@ -166,33 +238,36 @@ header {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  height: 100%;
   width: 100%;
+  height: 500px;
+  background-color: #eee;
+  border: 1px solid red;
 }
 
 .section-title {
-  position: relative;
   display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 300px;
-  background: url('kayakbg.jpg') center fixed;
+  height: 200px;
+  background: url('../kayakbg.jpg') center fixed;
   background-size: cover;
   justify-content: center;
   align-items: center;
 }
 
 .filter {
-  position: absolute;
+  position: relative;
   height: 100%;
   width: 100%;
   background-color: rgba(100, 100, 100, 0.7);
 }
 
 .section-title h1 {
+  position: absolute;
   font-size: 40px;
   letter-spacing: 3px;
-  color: #eeeeee;
-  z-index: 2;
+  color: #eee;
+  z-index: 3;
 }
 
 .form-container {
@@ -200,7 +275,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 75px auto;
+  margin: 25px auto;
   border-radius: 5px;
   width: 60%;
   /* border: 1px solid red; */
@@ -281,14 +356,14 @@ i {
   .projectsflex {
     display: grid;
     grid-template: repeat(4, 1fr)/ 1fr;
-    grid-gap: 3px;
+    grid-gap: 25px;
   }
   .section-title {
     position: relative;
     display: flex;
     width: 100%;
     height: 300px;
-    background: url('kayakbg.jpg') center;
+    background: url('../kayakbg.jpg') center;
     background-size: cover;
     justify-content: center;
     align-items: center;

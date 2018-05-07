@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Khottavong | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link href="css/fontawesome-all.css" rel="stylesheet">
 
 
@@ -26,25 +26,39 @@
 
   <header>
     <!-- <h1 class='initials'>SK</h1> -->
-    <div class='red-box'></div>
-    <h1 class='name'>Sean <br> Khottavong</h1>
-    <h1 class='title'> <br><span class='dev'>web developer</span></h1>
+    <!-- <div class='red-box'></div> -->
+    <div class='name-box'>
+      <h1 class='name'>Sean <br> Khottavong</h1>
+      <h1 class='title'> <br><span class='dev'>web developer</span></h1>
+    </div>
     <img class='pic' src="Image 5.png" alt="">
   </header>
 
 
 
-  <section id='about'>
-    <div class='about'>
-      <h1>About</h1>
-      <p>Hi, I'm Sean, an aspiring web-developer in the Chattanooga area. I'm a lover of music, art, and the outdoors and I like to employ elements and concepts of these interests into my work. Currently, I work as a refrigeration technician at a local,
-        well-known company, but I spend my free time learning more about web development, 3D printing, producing music, hiking, and whitewater kayaking. I have the heart of a creator and the mind of a technician.</p>
-      <h2>My Skills</h2>
-    </div>
+  <div class='section-title'>
+    <div class='filter'></div>
+    <h1>About Me</h1>
+  </div>
+  <section id='about' class='about'>
+    <p>Hi, I'm Sean, an aspiring web-developer in the Chattanooga area. I'm a lover of music, art, and the outdoors and I like to employ elements and concepts of these interests into my work. Currently, I work as a refrigeration technician at a local, well-known
+      company, but I spend my free time learning more about web development, 3D printing, producing music, hiking, and whitewater kayaking. I have the heart of a creator and the mind of a technician.</p>
+
+
+
   </section>
+  <div id='specialty' class='specialty'>
+    <h2>My Skills</h2>
+    <h4>HTML and CSS</h4>
+    <div id='skill1'>90%</div>
+    <h4>Javascript and Jquery</h4>
+    <div id='skill2'>60%</div>
+    <h4>Graphic Design</h4>
+    <div id='skill3'>50%</div>
+  </div>
 
 
-  <section id='projects'>
+  <section id='projects' class=projects-section>
     <div class='section-title'>
       <div class='filter'></div>
       <h1>Projects</h1>
@@ -59,9 +73,10 @@
 </iframe></div>
 
       <div class='item'>
+        <iframe height='100%' scrolling='no' src="http://hexads.netlify.com/" frameborder="0" allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
       </div>
 
-      <div class='item'>
+      <div class='item '>
         <a href="">My Blog</a>
       </div>
     </div>
@@ -69,13 +84,13 @@
 
 
 
+  <div class='section-title'>
+    <div class='filter'></div>
+    <h1>Contact</h1>
+  </div>
+  <section class='contact-section '>
 
-  <section class='contact-section'>
-    <div class='section-title'>
-      <div class='filter'></div>
-      <h1>Contact</h1>
-    </div>
-    <h1 id='contact'>If you like what you see, <br> let's get in touch.</h1>
+    <h1 id='contact '>If you like what you see, <br> let's get in touch.</h1>
 
     <div class='form-container'>
       <form action="https://formspree.io/sean.khottavong@gmail.com" method="POST">
