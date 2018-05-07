@@ -47,7 +47,7 @@ header {
   margin-top: 50px;
   overflow: hidden;
   background-color: #eee;
-  height: 80vh;
+  height: 60vh;
 }
 
 .red-box {
@@ -69,7 +69,7 @@ header {
 
 .name-box {
   position: relative;
-  top: 200px;
+  top: 100px;
   display: flex;
   flex-direction: column;
   border: 3px groove rgb(215, 35, 35);
