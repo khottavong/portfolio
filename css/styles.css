@@ -282,7 +282,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 250px;
   height: 50px;
 }
 
@@ -290,12 +290,14 @@ form {
   border: 1px solid lightgray;
   height: 100%;
   width: 50%;
+  border-radius: 2px;
 }
 
 .input-container input[type="email"] {
   border: 1px solid lightgray;
   height: 100%;
   width: 50%;
+  border-radius: 2px;
 }
 
 .form-text {
