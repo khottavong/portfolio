@@ -317,11 +317,9 @@ form {
   height: 50px;
   border: 1px solid #D72323;
   border-radius: 5px;
-  text-decoration: none;
   color: #D72323;
   font-size: 20px;
   font-weight: normal;
-  letter-spacing: 3px;
   background-color: transparent;
   text-align: center;
 }
