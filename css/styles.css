@@ -281,12 +281,15 @@ header {
 .input-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 50px;
 }
 
 .input-container input {
   border: 1px solid lightgray;
+  height: 100%;
+  width: 48%;
 }
 
 .form-text {
@@ -301,9 +304,9 @@ header {
 }
 
 #contactsubmit {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  appearance: none; */
   width: 100px;
   height: 50px;
   border: 1px solid #D72323;
