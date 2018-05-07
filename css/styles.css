@@ -41,7 +41,7 @@ header {
   position: relative;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   text-align: center;
   margin-top: 50px;
@@ -68,8 +68,6 @@ header {
 }
 
 .name-box {
-  position: relative;
-  top: 100px;
   display: flex;
   flex-direction: column;
   border: 3px groove rgb(215, 35, 35);
@@ -149,7 +147,6 @@ header {
   justify-content: center;
   align-items: center;
   height: 40px;
-  width: 0;
   background: rgb(170, 48, 48);
   background: linear-gradient(90deg, rgba(170, 48, 48, 1) 0%, rgba(196, 154, 31, 1) 26%, rgba(116, 153, 15, 1) 58%, rgba(39, 153, 0, 1) 100%);
   /* background: rgb(215, 99, 90);
@@ -157,7 +154,6 @@ header {
   color: #eee;
   margin-top: 0;
   border-radius: 2px;
-  transition: width 1s ease-in;
 }
 
 .specialty h2 {
@@ -282,11 +278,15 @@ header {
   /* border: 1px solid red; */
 }
 
-.input {
+.input-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 50px;
+}
+
+.input-container input {
+  border: 1px solid lightgray;
 }
 
 .form-text {
@@ -353,6 +353,9 @@ i {
     letter-spacing: 1px;
     padding: 15px 5px;
     margin: 0 3vw;
+  }
+  .pic {
+    display: none;
   }
   .projectsflex {
     display: grid;
