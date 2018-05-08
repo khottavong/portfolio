@@ -393,11 +393,15 @@ i {
     text-align: center;
     /* border: 1px solid red; */
   }
-  .projectsflex {
-    display: grid;
-    grid-template: repeat(4, 1fr)/ 1fr;
-    grid-gap: 25px;
-    margin: 0;
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 100%;
+    border-radius: 2px;
+    overflow: hidden;
   }
   .section-title {
     display: flex;
