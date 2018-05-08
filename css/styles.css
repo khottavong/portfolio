@@ -378,9 +378,6 @@ i {
     padding: 15px 5px;
     margin: 0 3vw;
   }
-  .pic {
-    display: none;
-  }
   .aboutme {
     display: flex;
     width: 90%;
