@@ -111,7 +111,7 @@ header {
 
 .about-container {
   display: flex;
-  min-height: 50vh;
+  min-height: 40vh;
   max-width: 980px;
   justify-content: flex-start;
   align-items: center;
@@ -160,7 +160,6 @@ header {
   color: #eee;
   margin-top: 0;
   border-radius: 2px;
-  transition: width 1s ease-in;
 }
 
 .specialty h2 {
@@ -180,17 +179,20 @@ header {
 
 .skill1 {
   width: 90% !important;
-  transition: all 1s linear;
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  ;
 }
 
 .skill2 {
   width: 60% !important;
-  transition: all 1s linear;
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  ;
 }
 
 .skill3 {
   width: 50% !important;
-  transition: all 1s linear;
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  ;
 }
 
 .projects-section {
