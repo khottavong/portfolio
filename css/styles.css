@@ -47,7 +47,7 @@ header {
   margin-top: 50px;
   overflow: hidden;
   background-color: #eee;
-  height: 60vh;
+  height: 50vh;
 }
 
 .name-box {
@@ -155,10 +155,12 @@ header {
   justify-content: center;
   align-items: center;
   height: 40px;
+  width: 0;
   background-color: #4E9907;
   color: #eee;
   margin-top: 0;
   border-radius: 2px;
+  transition: width 1s ease-in;
 }
 
 .specialty h2 {
@@ -178,17 +180,17 @@ header {
 
 .skill1 {
   width: 90% !important;
-  transition: all 1s ease-in;
+  transition: all 1s linear;
 }
 
 .skill2 {
   width: 60% !important;
-  transition: all 1s ease-in;
+  transition: all 1s linear;
 }
 
 .skill3 {
   width: 50% !important;
-  transition: all 1s ease-in;
+  transition: all 1s linear;
 }
 
 .projects-section {
