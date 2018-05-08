@@ -105,9 +105,25 @@ header {
 
 /* content */
 
-.about {
+#about {
   display: flex;
-  min-height: 70vh;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border-top: 2px solid #D72323;
+}
+
+#about h1 {
+  margin: 50px auto 0;
+  padding: 0;
+}
+
+.about-container {
+  display: flex;
+  min-height: 50vh;
   max-width: 980px;
   justify-content: flex-start;
   align-items: center;
@@ -119,16 +135,16 @@ header {
 
 .aboutme {
   display: flex;
-  max-width: 50%;
+  width: 50%;
   padding: 0 10px;
   margin: 0 auto;
 }
 
-.about p {
+.about-container p {
   line-height: 150%;
   letter-spacing: 0px;
   word-spacing: 1px;
-  margin: 50px auto 50px;
+  margin: 50px auto;
   color: #181F22;
   font-size: 18px;
   font-weight: lighter;
@@ -232,17 +248,17 @@ header {
   flex-direction: column;
   width: 100%;
   height: 200px;
-  background: url('../kayakbg.jpg') center fixed;
-  background-size: cover;
   justify-content: center;
   align-items: center;
+  background: url('../bg10.jpg') no-repeat center fixed;
+  background-size: cover;
 }
 
 .filter {
   position: relative;
   height: 100%;
   width: 100%;
-  background-color: rgba(100, 100, 100, 0.7);
+  background-color: rgba(150, 150, 150, 0.4);
 }
 
 .section-title h1 {
@@ -351,10 +367,6 @@ i {
   padding: 0 0;
 }
 
-.social i:hover {
-  color: red;
-}
-
 @media screen and (max-width: 768px) {
   nav a {
     font-size: 15px;
@@ -365,6 +377,21 @@ i {
   }
   .pic {
     display: none;
+  }
+  .aboutme {
+    display: flex;
+    width: 90%;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  .specialty {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto 50px;
+    text-align: center;
+    /* border: 1px solid red; */
   }
   .projectsflex {
     display: grid;
