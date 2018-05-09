@@ -292,24 +292,24 @@ form {
   justify-content: center;
   margin: 25px auto;
   border-radius: 5px;
-  max-width: 500px;
+  width: 50vw;
   text-align: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .input-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 250px;
+  width: 100%;
   height: 50px;
 }
 
 .input-container input {
   display: block;
-  border: 1px solid lightgray;
+  border: none;
   height: 100%;
-  width: 50%;
+  width: 48%;
   border-radius: 2px;
   padding: 0;
   margin: 0;
@@ -318,7 +318,7 @@ form {
 .form-text {
   width: 100%;
   height: 50px;
-  border: 1px solid lightgray;
+  border: none;
   border-radius: 2px;
   letter-spacing: 1px;
   font-size: 15px;
@@ -327,9 +327,6 @@ form {
 }
 
 #contactsubmit {
-  /* -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; */
   width: 100px;
   height: 50px;
   border: 1px solid #D72323;
@@ -377,9 +374,6 @@ i {
     letter-spacing: 1px;
     padding: 15px 5px;
     margin: 0 3vw;
-  }
-  .pic {
-    display: none;
   }
   #about {
     display: flex;
