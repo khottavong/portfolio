@@ -91,10 +91,11 @@ header {
 
 .pic {
   position: absolute;
-  width: 300px;
+  right: -50px;
+  width: 500px;
   height: auto;
-  bottom: -40px;
-  z-index: 2;
+  bottom: -55px;
+  z-index: 0;
 }
 
 /* content */
@@ -107,9 +108,6 @@ header {
   align-items: center;
   margin: 0;
   padding: 0;
-  background: url('../bg10.jpg') no-repeat center fixed;
-  background-size: cover;
-  /* border-top: 2px solid #D72323; */
 }
 
 #about h1 {
@@ -384,8 +382,8 @@ i {
     margin: 0;
     padding: 0;
     /* background: #181F22; */
-    background: url('../partialbg.jpeg') no-repeat center;
-    background-size: cover;
+    /* background: url('../partialbg.jpeg') no-repeat center;
+    background-size: cover; */
     /* border-top: 2px solid #D72323; */
   }
   .aboutme {
