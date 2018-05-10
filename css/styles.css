@@ -2,13 +2,15 @@ body {
   margin: 0 auto;
   padding: 0;
   background-color: #eee;
-  font-family: helvetica;
+  font-family: 'open sans';
 }
 
 h1, h2 {
   letter-spacing: 1px;
   font-weight: lighter;
 }
+
+/*  navbar */
 
 nav {
   position: fixed;
@@ -32,7 +34,6 @@ nav a {
 
 nav a:hover {
   border-bottom: 2px groove rgb(215, 35, 35);
-  /* border-top: 1px solid rgb(215, 35, 35); */
 }
 
 /* Header */
@@ -50,45 +51,6 @@ header {
   height: 50vh;
 }
 
-.gradient-box {
-  display: flex;
-  background: url('../bg10.jpg') no-repeat;
-  background-size: cover;
-  border-radius: 2px;
-  margin-top: 10px;
-}
-
-.name-box {
-  display: flex;
-  flex-direction: column;
-  z-index: 3;
-  background-color: #eee;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 2px;
-}
-
-.name {
-  color: #181F22;
-  text-transform: uppercase;
-  font-size: 40px;
-  line-height: 80%;
-  text-align: center;
-  /* margin: 6vh auto 0; */
-}
-
-.title {
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: -60px;
-}
-
-.dev {
-  color: #D05F47;
-  font-weight: lighter;
-  font-size: 28px;
-}
-
 .pic {
   position: absolute;
   right: -50px;
@@ -98,7 +60,7 @@ header {
   z-index: 0;
 }
 
-/* content */
+/* about content section */
 
 #about {
   display: flex;
@@ -108,11 +70,12 @@ header {
   align-items: center;
   margin: 0;
   padding: 0;
+  /* border: 1px solid yellow; */
 }
 
 #about h1 {
-  color: #eee;
-  margin: 25px auto 25px;
+  color: #181F22;
+  margin: 25px auto 0;
   padding: 0;
   letter-spacing: 6px;
 }
@@ -121,32 +84,26 @@ header {
   display: flex;
   min-height: 40vh;
   max-width: 980px;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  background-color: #eee;
+  background-color: inherit;
   margin: 0 auto;
   flex-wrap: wrap;
-  border-radius: 3px;
+  border-radius: 2px;
   /* border: 1px solid red; */
-}
-
-.aboutme {
-  display: flex;
-  width: 50%;
-  padding: 0 10px;
-  margin: 0 auto;
 }
 
 .about-container p {
   line-height: 150%;
-  letter-spacing: 0px;
-  word-spacing: 1px;
+  width: 40%;
   margin: 50px auto;
   color: #181F22;
   font-size: 18px;
   font-weight: lighter;
   text-align: justify;
 }
+
+/* skills transition area */
 
 .specialty {
   display: flex;
@@ -201,19 +158,35 @@ header {
 .skill3 {
   width: 50% !important;
   transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
-  ;
 }
 
-.projects-section {
-  position: relative;
+/* Projects content section */
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
 }
 
-.projectsflex {
-  display: grid;
+#projects h1 {
+  color: #181F22;
+  margin: 25px auto;
+  padding: 0;
+  letter-spacing: 6px;
+}
+
+.projects-container {
+  display: flex;
+  min-height: 40vh;
   max-width: 980px;
-  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
-  grid-gap: 25px;
-  margin: 25px auto 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: inherit;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  border-radius: 2px;
+  /* border: 1px solid red; */
 }
 
 .item {
@@ -221,29 +194,24 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50vh;
-  width: 100%;
+  width: 50%;
+  margin: 50px auto;
   border-radius: 2px;
   overflow: hidden;
 }
 
-.one {
-  background: url('https://photos.smugmug.com/Shop/Adventure/i-ZWkfc4h/0/6d9688f2/L/1618_BURKARD_017085-L.jpg') no-repeat center;
-  background-size: cover;
+.item iframe {
+  margin: 0 50px;
 }
 
-.one a {
-  text-decoration: none;
-  color: #eee;
-  letter-spacing: 3px;
-  font-size: 22px;
-  line-height: 80%;
-  text-align: center;
+.item-description {
+  line-height: 150%;
+  width: 40%;
+  margin: 50px auto;
+  color: #181F22;
+  font-size: 18px;
   font-weight: lighter;
-}
-
-.one a:hover {
-  color: #D72323;
+  text-align: justify;
 }
 
 .section-title {
@@ -261,27 +229,21 @@ header {
   position: relative;
   height: 100%;
   width: 100%;
-  background-color: rgba(150, 150, 150, 0.4);
+  background-color: rgba(40, 74, 88, 0.5);
 }
 
-.section-title h1 {
-  letter-spacing: 6px;
-  color: #eee;
-  z-index: 3;
-}
-
-.contact-section {
-  /* background: url('bg5.jpg') no-repeat center fixed;
-  background-size: cover; */
+#contact {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   width: 100%;
-  height: 500px;
+  height: 50vh;
   background-color: #eee;
   /* border: 1px solid red; */
 }
+
+#contact {}
 
 form {
   display: flex;
@@ -381,16 +343,11 @@ i {
     align-items: center;
     margin: 0;
     padding: 0;
-    /* background: #181F22; */
-    /* background: url('../partialbg.jpeg') no-repeat center;
-    background-size: cover; */
-    /* border-top: 2px solid #D72323; */
   }
-  .aboutme {
-    display: flex;
+  .about-container p {
     width: 90%;
     padding: 0 10px;
-    margin: 0 auto;
+    margin: 50px auto;
   }
   .specialty {
     display: flex;
@@ -410,20 +367,17 @@ i {
   .item {
     display: flex;
     flex-direction: column;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    height: 50vw;
+    margin: 0;
+    padding: 0;
     width: 100%;
     overflow: hidden;
   }
-  .section-title {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100px;
-    justify-content: flex-end;
-    align-items: center;
-    background: url('../partialbg.jpeg') no-repeat center;
-    background-size: cover;
+  .item-description {
+    width: 90%;
+    padding: 0 10px;
+    margin: 50px auto;
   }
 }
