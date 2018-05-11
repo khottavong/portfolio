@@ -72,7 +72,13 @@ header {
   z-index: 3;
 }
 
+.name-box h1 {
+  color: black;
+}
+
 .name-box h2 {
+  font-family: 'open sans';
+  font-weight: lighter;
   color: #FF9F62;
   font-size: 2rem;
 }
@@ -81,15 +87,15 @@ header {
   position: relative;
   height: 100%;
   width: 100%;
-  background-color: rgba(40, 74, 88, 0.5);
+  background-color: rgba(40, 74, 88, 0.7);
 }
 
 .pic {
   position: absolute;
   right: -50px;
-  width: 500px;
-  height: auto;
-  bottom: -55px;
+  width: auto;
+  height: 50vh;
+  bottom: -10%;
   z-index: 0;
 }
 
