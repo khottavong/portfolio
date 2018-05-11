@@ -27,16 +27,27 @@ nav {
 nav a {
   text-decoration: none;
   color: #181F22;
-  padding: 15px 5px;
+  padding: 15px;
   letter-spacing: 3px;
   margin: 0 3vw;
-  border: 2px solid transparent;
+  border-bottom: 2px solid transparent;
   font-weight: lighter;
 }
 
 nav a:hover {
-  border-bottom: 2px groove rgb(215, 35, 35);
+  background: url('../partialbg.jpeg') no-repeat bottom;
+  background-size: cover;
 }
+
+/* nav a:hover::after {
+  content: "";
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 10px;
+  background-color: red;
+  z-index: 10;
+} */
 
 /* Header */
 
@@ -50,7 +61,15 @@ header {
   margin-top: 50px;
   overflow: hidden;
   background-color: #eee;
+  width: 100vw;
   height: 50vh;
+}
+
+.filter {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(40, 74, 88, 0.5);
 }
 
 .pic {
@@ -75,11 +94,20 @@ header {
   /* border: 1px solid yellow; */
 }
 
-#about h1 {
+.content-header {
   color: #181F22;
-  margin: 25px auto 0;
+  margin: 25px auto;
   padding: 0;
   letter-spacing: 6px;
+}
+
+.content-header::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 2px;
+  background: url('../partialbg.jpeg') no-repeat center fixed;
+  background-size: cover;
 }
 
 .about-container {
@@ -97,8 +125,8 @@ header {
 
 .about-container p {
   line-height: 150%;
-  width: 40%;
-  margin: 50px auto;
+  width: 50%;
+  margin: 0 auto;
   color: #181F22;
   font-size: 18px;
   font-weight: lighter;
@@ -123,7 +151,8 @@ header {
   align-items: center;
   height: 40px;
   width: 0;
-  background-color: #4E9907;
+  background: url('../partialbg.jpeg') no-repeat center fixed;
+  background-size: cover;
   color: #eee;
   margin-top: 0;
   border-radius: 2px;
@@ -171,13 +200,6 @@ header {
   width: 100%;
 }
 
-#projects h1 {
-  color: #181F22;
-  margin: 25px auto;
-  padding: 0;
-  letter-spacing: 6px;
-}
-
 .projects-container {
   display: flex;
   min-height: 40vh;
@@ -216,24 +238,6 @@ header {
   text-align: justify;
 }
 
-.section-title {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100px;
-  justify-content: flex-end;
-  align-items: center;
-  background: url('../partialbg.jpeg') no-repeat center fixed;
-  background-size: cover;
-}
-
-.filter {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(40, 74, 88, 0.5);
-}
-
 #contact {
   display: flex;
   flex-direction: column;
@@ -244,8 +248,6 @@ header {
   background-color: #eee;
   /* border: 1px solid red; */
 }
-
-#contact {}
 
 form {
   display: flex;
@@ -343,13 +345,13 @@ i {
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
   }
   .about-container p {
     width: 90%;
     padding: 0 10px;
-    margin: 50px auto;
+    margin: 0 auto;
   }
   .specialty {
     display: flex;
