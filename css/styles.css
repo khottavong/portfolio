@@ -73,15 +73,18 @@ header {
 }
 
 .name-box h1 {
-  color: black;
-  font-size: 3rem
+  text-transform: uppercase;
+  color: #121A21;
+  font-size: 2rem;
+  letter-spacing: 3px;
 }
 
 .name-box h2 {
-  font-family: 'open sans';
+  font-family: 'Open Sans', sans-serifs;
   font-weight: lighter;
-  color: #FF9F62;
+  color: #FF8255;
   font-size: 2rem;
+  letter-spacing: 3px;
 }
 
 .filter {
