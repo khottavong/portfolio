@@ -218,8 +218,9 @@ header {
 #projects {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 auto 25px;
   width: 100%;
+  background: rgba(40, 74, 88, 0.5);
 }
 
 .projects-container {
@@ -228,7 +229,6 @@ header {
   max-width: 980px;
   justify-content: space-between;
   align-items: center;
-  background-color: inherit;
   margin: 0 auto;
   flex-wrap: wrap;
   border-radius: 2px;
@@ -414,7 +414,7 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 0 auto 50px;
     padding: 0;
     width: 90%;
     overflow: hidden;
