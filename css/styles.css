@@ -163,8 +163,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 0;
-  width: 0;
   background: url('../partial-bg-nav.jpg') top/cover no-repeat;
   opacity: .9;
   color: #eee;
@@ -253,10 +251,10 @@ header {
 
 .animation-element.slide-left {
   opacity: 0;
-  -moz-transition: all 1s ease-in;
-  -webkit-transition: all 1s ease-in;
-  -o-transition: all 1s ease-in;
-  transition: all 1s ease-in;
+  -moz-transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  -webkit-transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  -o-transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
   -moz-transform: translate3d(-50px, 0px, 0px);
   -webkit-transform: translate3d(-50px, 0px, 0px);
   -o-transform: translate(-50px, 0px);
@@ -266,10 +264,10 @@ header {
 
 .animation-element.slide-right {
   opacity: 0;
-  -moz-transition: all 1s ease-in;
-  -webkit-transition: all 1s ease-in;
-  -o-transition: all 1s ease-in;
-  transition: all 1s ease-in;
+  -moz-transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  -webkit-transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  -o-transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
   -moz-transform: translate3d(50px, 0px, 0px);
   -webkit-transform: translate3d(50px, 0px, 0px);
   -o-transform: translate(50px, 0px);
