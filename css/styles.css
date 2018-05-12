@@ -109,7 +109,7 @@ header {
 
 .content-header {
   color: #181F22;
-  margin: 25px auto;
+  margin: 25px auto 50px;
   padding: 0;
   letter-spacing: 6px;
   /* border: 1px solid red; */
@@ -233,7 +233,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 50%;
-  margin: 50px auto;
+  margin: 50px auto 0;
   border-radius: 2px;
   overflow: hidden;
 }
@@ -261,10 +261,10 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
   width: 100%;
   min-height: 60vh;
   background-color: #eee;
+  margin-top: 0;
   /* border: 1px solid red; */
 }
 
@@ -273,7 +273,7 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 25px auto;
+  margin: 50px auto 25px;
   border-radius: 5px;
   width: 50vw;
   text-align: center;
@@ -312,18 +312,17 @@ form {
 #contactsubmit {
   width: 100px;
   height: 50px;
-  border: 1px solid #D72323;
-  border-radius: 5px;
-  color: #D72323;
+  border: none;
+  border-radius: 2px;
   font-size: 20px;
   font-weight: normal;
-  background-color: transparent;
   text-align: center;
+  background: url('../partial-bg-nav.jpg') bottom/cover no-repeat;
 }
 
 #contactsubmit:hover {
-  background-color: #D72323;
-  color: #eee;
+  background: url('../partial-bg-nav.jpg') bottom/cover no-repeat;
+  opacity: .75;
 }
 
 footer {
