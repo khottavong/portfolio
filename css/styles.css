@@ -209,7 +209,7 @@ header {
 
 .skill2.animation-element.load.in-view {
   height: 40px;
-  width: 60%;
+  width: 75%;
   transition: all 1.5s cubic-bezier(0.785, 0.135, 0.150, 0.860);
 }
 
@@ -221,7 +221,7 @@ header {
 
 .skill3.animation-element.load.in-view {
   height: 40px;
-  width: 50%;
+  width: 60%;
   transition: all 2s cubic-bezier(0.785, 0.135, 0.150, 0.860);
 }
 
