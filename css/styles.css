@@ -188,21 +188,35 @@ header {
   /* border: 1px solid red; */
 }
 
-.skill1 {
-  width: 90% !important;
+.skill1.animation-element.load {
+  width: 0;
   transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
   ;
 }
 
-.skill2 {
-  width: 60% !important;
+.skill1.animation-element.load.in-view {
+  width: 90%;
   transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
-  ;
 }
 
-.skill3 {
-  width: 50% !important;
+.skill2.animation-element.load {
+  width: 0;
   transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.skill2.animation-element.load.in-view {
+  width: 60%;
+  transition: all 2s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.skill3.animation-element.load {
+  width: 0;
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.skill3.animation-element.load.in-view {
+  width: 50%;
+  transition: all 3s cubic-bezier(0.785, 0.135, 0.150, 0.860);
 }
 
 /* Projects content section */
