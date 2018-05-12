@@ -233,28 +233,28 @@ header {
 
 .animation-element.slide-left {
   opacity: 0;
-  -moz-transition: all 700ms linear;
-  -webkit-transition: all 700ms linear;
-  -o-transition: all 700ms linear;
-  transition: all 700ms linear;
-  -moz-transform: translate3d(-200px, 0px, 0px);
-  -webkit-transform: translate3d(-200px, 0px, 0px);
-  -o-transform: translate(-200px, 0px);
-  -ms-transform: translate(-200px, 0px);
-  transform: translate3d(-200px, 0px, 0px);
+  -moz-transition: all 1s ease-in;
+  -webkit-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+  -moz-transform: translate3d(-50px, 0px, 0px);
+  -webkit-transform: translate3d(-50px, 0px, 0px);
+  -o-transform: translate(-50px, 0px);
+  -ms-transform: translate(-50px, 0px);
+  transform: translate3d(-50px, 0px, 0px);
 }
 
 .animation-element.slide-right {
   opacity: 0;
-  -moz-transition: all 700ms linear;
-  -webkit-transition: all 700ms linear;
-  -o-transition: all 700ms linear;
-  transition: all 700ms linear;
-  -moz-transform: translate3d(200px, 0px, 0px);
-  -webkit-transform: translate3d(200px, 0px, 0px);
-  -o-transform: translate(200px, 0px);
-  -ms-transform: translate(200px, 0px);
-  transform: translate3d(200px, 0px, 0px);
+  -moz-transition: all 1s ease-in;
+  -webkit-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+  -moz-transform: translate3d(50px, 0px, 0px);
+  -webkit-transform: translate3d(50px, 0px, 0px);
+  -o-transform: translate(50px, 0px);
+  -ms-transform: translate(50px, 0px);
+  transform: translate3d(50px, 0px, 0px);
 }
 
 .animation-element.slide-left.in-view {
