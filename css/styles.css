@@ -163,7 +163,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  height: 0;
   width: 0;
   background: url('../partial-bg-nav.jpg') top/cover no-repeat;
   opacity: .9;
@@ -189,34 +189,40 @@ header {
 }
 
 .skill1.animation-element.load {
+  height: 0;
   width: 0;
   transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
   ;
 }
 
 .skill1.animation-element.load.in-view {
+  height: 40px;
   width: 90%;
   transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
 }
 
 .skill2.animation-element.load {
+  height: 0;
   width: 0;
   transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
 }
 
 .skill2.animation-element.load.in-view {
+  height: 40px;
   width: 60%;
-  transition: all 2s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  transition: all 1.5s cubic-bezier(0.785, 0.135, 0.150, 0.860);
 }
 
 .skill3.animation-element.load {
+  height: 0;
   width: 0;
   transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
 }
 
 .skill3.animation-element.load.in-view {
+  height: 40px;
   width: 50%;
-  transition: all 3s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  transition: all 2s cubic-bezier(0.785, 0.135, 0.150, 0.860);
 }
 
 /* Projects content section */
