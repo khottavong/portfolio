@@ -11,3 +11,11 @@ window.addEventListener('load', function() {
   skill2.classList.add('skill2');
   skill3.classList.add('skill3');
 });
+
+$(document).on('click', 'a[href^="#"]', function(event) {
+  event.preventDefault();
+
+  $('html, body').animate({
+    scrollTop: $($.attr(this, 'href')).offset().top
+  }, 500);
+});

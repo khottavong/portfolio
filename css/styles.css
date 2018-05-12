@@ -39,16 +39,6 @@ nav a:hover {
   background: url('../partial-bg-nav.jpg') bottom/cover no-repeat;
 }
 
-/* nav a:hover::after {
-  content: "";
-  position: fixed;
-  display: flex;
-  width: 100%;
-  height: 10px;
-  background-color: red;
-  z-index: 10;
-} */
-
 /* Header */
 
 header {
@@ -75,7 +65,7 @@ header {
 
 .name-box h1 {
   text-transform: uppercase;
-  color: #121A21;
+  color: #eee;
   font-size: 3rem;
   letter-spacing: 3px;
 }
@@ -175,7 +165,8 @@ header {
   align-items: center;
   height: 40px;
   width: 0;
-  background: url('../partial-bg-nav.jpg') bottom/cover no-repeat;
+  background: url('../partial-bg-nav.jpg') top/cover no-repeat;
+  opacity: .9;
   color: #eee;
   margin-top: 0;
   border-radius: 2px;
@@ -376,7 +367,7 @@ i {
   }
   .name-box h1 {
     text-transform: uppercase;
-    color: #121A21;
+    color: #eee;
     font-size: 2rem;
     letter-spacing: 3px;
   }
