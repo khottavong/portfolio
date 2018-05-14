@@ -1,22 +1,3 @@
-// const skill1 = document.querySelector('#skill1');
-// const skill2 = document.querySelector('#skill2');
-// const skill3 = document.querySelector('#skill3');
-// const area = document.querySelector('#specialty');
-
-// window.addEventListener('load', function() {
-//   console.log('hello');
-//   skill1.classList.add('skill1');
-//   skill2.classList.add('skill2');
-//   skill3.classList.add('skill3');
-// });
-
-
-
-
-
-
-
-
 //Cache reference to window and animation items
 var $animation_elements = $('.animation-element');
 var $window = $(window);
@@ -48,20 +29,6 @@ $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
 
-
-
-$(window).scroll(function() {
-  if ($(this).width() < 992) {
-    if ($(this).height() <= 768) {
-      if ($(this).scrollTop() < 500) {
-        // apply effects
-      }
-      if ($(this).scrollTop() > 1000) {
-        // apply effects
-      }
-    }
-  }
-});
 
 //smooth anchor scrolling
 
