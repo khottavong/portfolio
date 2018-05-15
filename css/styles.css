@@ -517,6 +517,9 @@ i {
     padding: 15px 3vw;
     margin: 0;
   }
+  .vid-container {
+    display: none;
+  }
   .name-box {
     position: absolute;
     left: 0;
