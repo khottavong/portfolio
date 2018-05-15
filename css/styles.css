@@ -35,6 +35,10 @@ nav a {
   font-weight: lighter;
 }
 
+nav a:hover {
+  color: #eee;
+}
+
 nav a:hover::after {
   content: "";
   display: flex;
@@ -54,11 +58,14 @@ nav a:hover::after {
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
+    border-radius: 100%;
+    opacity: 0;
   }
   100% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
+    opacity: 1;
   }
 }
 
@@ -76,6 +83,19 @@ header {
   background-color: #eee;
   width: 100vw;
   height: 50vh;
+}
+
+.vid-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+header video {
+  height: 100%;
+  width: auto;
 }
 
 .download-resume {
@@ -370,6 +390,7 @@ header {
 }
 
 #contact {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -422,8 +443,9 @@ form {
 }
 
 #contactsubmit {
+  position: absolute;
   color: #eee;
-  margin-top: 25px;
+  bottom: 100px;
   width: 100px;
   height: 50px;
   border: none;
@@ -432,13 +454,13 @@ form {
   font-weight: normal;
   text-align: center;
   background: url('../partial-bg-nav.jpg') bottom/cover no-repeat;
-  animation: submit-bounce linear 1.5s infinite;
 }
 
 #contactsubmit:hover {
   background: url('../partial-bg-nav.jpg') bottom/cover no-repeat;
   opacity: .75;
   cursor: pointer;
+  animation: submit-bounce linear 1s infinite;
 }
 
 footer {
@@ -461,19 +483,19 @@ footer {
 
 i {
   color: #eeeeee;
-  margin: 0 25px;
+  margin: 0 15px;
   padding: 0 0;
 }
 
 @keyframes submit-bounce {
   0% {
-    margin-top: 25px;
+    bottom: 100px;
   }
   50% {
-    margin-top: 35px;
+    bottom: 90px;
   }
   100% {
-    margin-top: 25px;
+    bottom: 100px;
   }
 }
 
@@ -484,6 +506,9 @@ i {
     letter-spacing: 1px;
     padding: 15px 3vw;
     margin: 0;
+  }
+  .vid-container {
+    display: none;
   }
   .name-box {
     position: absolute;
