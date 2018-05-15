@@ -78,7 +78,7 @@ header {
   /* justify-content: center; */
   align-items: center;
   text-align: center;
-  margin-top: 50px;
+  margin: 50px auto auto;
   overflow: hidden;
   background-color: #eee;
   width: 100vw;
@@ -87,17 +87,19 @@ header {
 
 .vid-container {
   display: flex;
+  width: 50%;
   height: 100%;
   position: absolute;
-  left: 0;
+  left: 5%;
   top: 0;
-  -webkit-clip-path: polygon(0 3%, 100% 0%, 75% 100%, 0% 100%);
-  clip-path: polygon(0 3%, 100% 0%, 75% 100%, 0% 100%);
+  bottom: 0;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
 header video {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 
 .download-resume {
@@ -501,11 +503,11 @@ i {
   }
 }
 
-@media screen and (max-width: 980px) {
+/* @media screen and (max-width: 980px) {
   .vid-container {
     display: none;
   }
-}
+} */
 
 @media screen and (max-width: 768px) {
   nav a {
