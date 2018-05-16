@@ -319,7 +319,7 @@ header video {
   max-width: 980px;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   flex-wrap: wrap;
   border-radius: 2px;
   overflow: hidden;
