@@ -18,12 +18,8 @@ h1, h2 {
 }
 
 p {
-  line-height: 150%;
-  width: 50%;
-  color: #181F22;
-  font-size: 18px;
   font-weight: lighter;
-  text-align: center;
+  font-size: 18px;
 }
 
 /*  navbar */
@@ -248,10 +244,13 @@ header video {
   justify-content: center;
   align-items: center;
   background: url('../partial-bg-nav.jpg') top/cover no-repeat;
-  opacity: .9;
+  opacity: .8;
   color: #eee;
   margin-top: 0;
   border-radius: 2px;
+  -webkit-box-shadow: 6px 13px 93px 10px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 6px 13px 93px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 6px 13px 93px 10px rgba(0, 0, 0, 0.15);
 }
 
 .specialty h2 {
