@@ -91,7 +91,7 @@ header {
   overflow: hidden;
   background-color: #eee;
   width: 100vw;
-  height: 60vh;
+  height: 500px;
 }
 
 .vid-container {
@@ -169,7 +169,7 @@ header video {
   position: absolute;
   right: -50px;
   width: auto;
-  height: 60vh;
+  height: 450px;
   bottom: -12%;
   z-index: 0;
 }
