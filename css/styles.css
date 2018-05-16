@@ -91,7 +91,7 @@ header {
   overflow: hidden;
   background-color: #eee;
   width: 100vw;
-  height: 50vh;
+  height: 500px;
 }
 
 .vid-container {
@@ -513,12 +513,6 @@ i {
     bottom: 100px;
   }
 }
-
-/* @media screen and (max-width: 980px) {
-  .vid-container {
-    display: none;
-  }
-} */
 
 @media screen and (max-width: 768px) {
   nav a {
