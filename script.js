@@ -42,3 +42,10 @@ $(document).on('click', 'a[href^="#"]', function(event) {
 
 
 const form = document.querySelector('form');
+
+const burgernav = document.querySelector('.burger-nav');
+
+function myFunction(x) {
+  x.classList.toggle("change");
+  burgernav.classList.toggle('burger-transition');
+}
