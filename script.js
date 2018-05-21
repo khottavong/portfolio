@@ -20,7 +20,7 @@ function check_if_in_view() {
       (element_top_position <= window_bottom_position)) {
       $element.addClass('in-view');
     } else {
-      $element.removeClass('in-view');
+      // $element.removeClass('in-view');
     }
   });
 }
@@ -41,11 +41,18 @@ $(document).on('click', 'a[href^="#"]', function(event) {
 });
 
 
-const form = document.querySelector('form');
+const form = $('form');
+const hamburger = $('.hamburger');
+const burgernav = $('.burger-nav');
+const burgera = $('.burger-nav a')
 
-const burgernav = document.querySelector('.burger-nav');
+hamburger.on('click', function() {
+  hamburger.toggleClass('change');
+  burgernav.toggleClass('burger-transition');
+})
 
-function myFunction(x) {
-  x.classList.toggle("change");
-  burgernav.classList.toggle('burger-transition');
-}
+
+$('.burger-nav a').on('click', function() {
+  burgernav.toggleClass('burger-transition');
+  hamburger.toggleClass('change');
+})
