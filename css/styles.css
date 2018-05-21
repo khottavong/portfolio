@@ -576,14 +576,14 @@ i {
     padding: 0;
     margin: 0;
     cursor: pointer;
-    top: 0;
+    top: 8px;
     right: 10px;
-    z-index: 101;
+    z-index: 102;
   }
   .bar1, .bar2, .bar3 {
     height: 3px;
-    width: 40px;
-    margin: 10px auto;
+    width: 30px;
+    margin: 6px auto;
     border-radius: 25%;
     background: url('../partial-bg-nav.jpg');
     -webkit-transform: rotate(0) translate(0, 0);
@@ -592,8 +592,8 @@ i {
   }
   /* Rotate first bar */
   .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
-    transform: rotate(-45deg) translate(-10px, 9px);
+    -webkit-transform: rotate(-45deg) translate(-5px, 10px);
+    transform: rotate(-45deg) translate(-5px, 9px);
     transition: all .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
   }
   /* Fade out the second bar */
@@ -603,8 +603,8 @@ i {
   }
   /* Rotate last bar */
   .change .bar3 {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg) translate(-8px, -9px);
+    -webkit-transform: rotate(45deg) translate(-3px, -9px);
+    transform: rotate(45deg) translate(-3px, -9px);
     transition: all .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
   }
   .burger-nav {
@@ -613,20 +613,22 @@ i {
     flex-direction: column;
     width: 100vw;
     background-color: #eee;
-    z-index: 99;
+    z-index: 101;
     right: 0;
-    top: 50px;
+    top: 0;
+    opacity: 0;
     transform: translateY(-300px);
-    transition: transform .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    transition: all .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
   }
   .burger-transition {
+    opacity: 1;
     transform: translateY(0);
-    transition: transform .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    transition: all .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
   }
   .burger-nav a {
     text-decoration: none;
     color: #333;
-    font-size: 24px;
+    font-size: 18px;
     margin: 20px auto;
     font-weight: lighter;
   }
