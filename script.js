@@ -44,7 +44,7 @@ $(document).on('click', 'a[href^="#"]', function(event) {
 const form = $('form');
 const hamburger = $('.hamburger');
 const burgernav = $('.burger-nav');
-const burgera = $('.burger-nav a')
+const burgerList = $('.burger-nav a')
 
 hamburger.on('click', function() {
   hamburger.toggleClass('change');
@@ -52,7 +52,7 @@ hamburger.on('click', function() {
 })
 
 
-$('.burger-nav a').on('click', function() {
+burgerList.on('click', function() {
   burgernav.toggleClass('burger-transition');
   hamburger.toggleClass('change');
 })
