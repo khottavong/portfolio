@@ -46,10 +46,14 @@ const hamburger = $('.hamburger');
 const burgernav = $('.burger-nav');
 const burgerList = $('.burger-nav a')
 
+
+
 hamburger.on('click', function() {
   hamburger.toggleClass('change');
   burgernav.toggleClass('burger-transition');
 })
+
+
 
 
 burgerList.on('click', function() {

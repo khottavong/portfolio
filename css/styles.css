@@ -499,6 +499,8 @@ input {
   margin: 5px auto;
   border: none;
   border-radius: 2px;
+  font-size: 15px;
+  font-weight: lighter;
 }
 
 .form-text {
@@ -633,6 +635,9 @@ i {
     font-size: 18px;
     margin: 20px auto;
     font-weight: lighter;
+  }
+  .burger-nav a:hover {
+    color: #FF8255;
   }
   nav a {
     display: none;
