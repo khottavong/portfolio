@@ -57,7 +57,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3 {
+h1 {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
   margin: 0 auto;
@@ -240,10 +240,12 @@ header video {
 }
 
 .content-header {
+  font-family: 'Montserrat', sans-serif;
   color: #181F22;
   margin: 25px auto 50px;
   padding: 0;
   letter-spacing: 6px;
+  font-weight: bold;
   /* border: 1px solid red; */
 }
 
@@ -454,6 +456,12 @@ header video {
   font-size: 18px;
   font-weight: lighter;
   text-align: justify;
+}
+
+.item-description h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
 #contact {
