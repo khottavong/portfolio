@@ -44,8 +44,13 @@ $(document).on('click', 'a[href^="#"]', function(event) {
 const form = $('form');
 const hamburger = $('.hamburger');
 const burgernav = $('.burger-nav');
-const burgerList = $('.burger-nav a')
+const burgerList = $('.burger-nav a');
+const navLinks = $('nav a');
 
+navLinks.on('click', function() {
+  navLinks.removeClass('active');
+  $(this).addClass('active');
+})
 
 
 hamburger.on('click', function() {

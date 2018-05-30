@@ -58,8 +58,9 @@ body {
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 1px;
+  /* font-family: "Helvetica Neue LT W01_77 Bd Cn", sans-serif; */
+  /* font-family: "Gill Sans W01 Light", sans-serif; */
+  letter-spacing: 3px;
   margin: 0 auto;
 }
 
@@ -112,6 +113,11 @@ nav a:hover::after {
   right: 0;
   z-index: -1;
   animation: nav-slide linear .15s;
+}
+
+.active {
+  color: #eee;
+  background: url('../partial-bg-nav.jpg') bottom/cover no-repeat;
 }
 
 @keyframes nav-slide {
@@ -203,7 +209,8 @@ header video {
 }
 
 .name-box h2 {
-  font-family: 'Open Sans', sans-serifs;
+  /* font-family: 'Open Sans', sans-serifs; */
+  font-family: "Gill Sans W01 Light", sans-serif;
   font-weight: lighter;
   color: #FF8255;
   font-size: 3rem;
@@ -240,12 +247,15 @@ header video {
 }
 
 .content-header {
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: "Helvetica Neue LT W01_77 Bd Cn"; */
+  font-family: "Gill Sans W01 Light";
   color: #181F22;
   margin: 25px auto 50px;
   padding: 0;
   letter-spacing: 6px;
   font-weight: bold;
+  font-size: 24px;
   /* border: 1px solid red; */
 }
 
@@ -641,11 +651,14 @@ i {
     text-transform: uppercase;
     color: #333;
     font-size: 18px;
-    margin: 20px auto;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 0;
     font-weight: lighter;
   }
   .burger-nav a:hover {
-    color: #FF8255;
+    color: #eee;
+    background: url('../partial-bg-nav.jpg') bottom/cover no-repeat;
   }
   nav a {
     display: none;
